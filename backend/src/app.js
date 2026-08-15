@@ -5,7 +5,7 @@ const cors = require('cors')
 const app = express()
 
 app.use(cors({
-  origin: "*",
+  origin: ["https://ai-code-reviewer-sigma-mauve.vercel.app", "http://localhost:5173"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
